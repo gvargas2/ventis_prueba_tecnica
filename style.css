@@ -69,3 +69,44 @@
     border-color: black;
     border-style: solid;
 }
+
+.rojo {
+    float: left;
+    position: relative;
+    right: 2px;
+    top: -3px;
+
+}
+
+.azul {
+    float: right;
+    position: relative;
+    right: -2px;
+    top: -22px;
+
+}
+
+.verde {
+    position: relative;
+    top: 38px;
+    right: 3px;
+}
+
+.amarillo {
+    position: relative;
+    right: 3px;
+    top: -22px;
+}
+
+
+/*Posicionamiento numeros cajas*/
+
+.numero_derecha {
+    float: right;
+}
+
+.numero_inferior {
+    position: relative;
+    top: 38px;
+    left: 28px;
+}
