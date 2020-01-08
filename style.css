@@ -1,0 +1,11 @@
+#tablero_superior, #tablero_derecha, #tablero_izquierda, #tablero_inferior {
+    margin: 30px;
+}
+
+#lugar_1, #lugar_2, #lugar_3, #lugar_4, #lugar_10, #lugar_11, #lugar_12, #lugar_13{
+    float: left;
+}
+
+#tablero_derecha {
+    float: right;
+}
