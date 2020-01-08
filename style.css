@@ -29,12 +29,21 @@
 
 /*Colores cajas*/
 #lugar1, #lugar_5, #lugar_9, #lugar_13 {
-    background-color: blue;
+    background-color: white;
 }
 
 /*Colores Indicadores*/
 .verde {
     background-color: green;
+}
+.rojo {
+    background-color: red;
+}
+.amarillo {
+    background-color: yellow;
+}
+.azul {
+    background-color: blue;
 }
 
 /*Dimensiones Cajas*/
@@ -47,9 +56,16 @@
      margin: 5px;
  }
 
-.verde {
+.verde, .amarillo {
     width: 80px;
     height: 20px;
+    border-color: black;
+    border-style: solid;
+}
+
+.rojo, .azul {
+    width: 20px;
+    height: 80px;
     border-color: black;
     border-style: solid;
 }
