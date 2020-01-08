@@ -20,4 +20,36 @@
 #tablero_inferior {
     flex-direction: row;
     flex-direction: row-reverse;
+    justify-content: center;
+}
+
+#tablero_superior {
+    justify-content: center;
+}
+
+/*Colores cajas*/
+#lugar1, #lugar_5, #lugar_9, #lugar_13 {
+    background-color: blue;
+}
+
+/*Colores Indicadores*/
+.verde {
+    background-color: green;
+}
+
+/*Dimensiones Cajas*/
+#lugar_1, #lugar_2, #lugar_3, #lugar_4, #lugar_5, #lugar_6, #lugar_7, #lugar_8, #lugar_9,
+ #lugar_10, #lugar_11, #lugar_12, #lugar_13, #lugar_14, #lugar_15, #lugar_16 {
+     width: 80px;
+     height: 80px;
+     border-color: black;
+     border-style: solid;
+     margin: 5px;
+ }
+
+.verde {
+    width: 80px;
+    height: 20px;
+    border-color: black;
+    border-style: solid;
 }
