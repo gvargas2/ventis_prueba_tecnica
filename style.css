@@ -1,5 +1,9 @@
+#tablero_general {
+    width: 580px;
+    height: 540px;
+}
+
 #tablero_superior, #tablero_derecha, #tablero_izquierda, #tablero_inferior {
-    margin: 30px;
     display: flex;
 }
 
@@ -10,11 +14,15 @@
 #tablero_derecha {
     float: right;
     flex-direction: column;
+    position: relative;
+    left: -50px;
 }
 
 #tablero_izquierda {
     flex-direction: column;
     flex-direction: column-reverse;
+    position: relative;
+    left: 50px;
 }
 
 #tablero_inferior {
@@ -109,4 +117,12 @@
     position: relative;
     top: 38px;
     left: 28px;
+}
+
+/*Rotado Numeros*/
+.rotado-1 {
+    transform: rotate(-45deg);
+    position: relative;
+    left: 24px;
+    top: 5px;
 }
