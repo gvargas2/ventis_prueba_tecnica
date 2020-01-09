@@ -1,14 +1,16 @@
+body {
+    font-size: 26px;
+}
+
 #tablero_general {
     width: 580px;
     height: 540px;
+    margin: 0 auto;
+    margin-top: 70px;
 }
 
 #tablero_superior, #tablero_derecha, #tablero_izquierda, #tablero_inferior {
     display: flex;
-}
-
-#lugar_1, #lugar_2, #lugar_3, #lugar_4, #lugar_10, #lugar_11, #lugar_12, #lugar_13git{
-    float: left;
 }
 
 #tablero_derecha {
@@ -35,12 +37,13 @@
     justify-content: center;
 }
 
-/*Colores cajas*/
-#lugar1, #lugar_5, #lugar_9, #lugar_13 {
-    background-color: white;
+#lugar_1, #lugar_2, #lugar_3, #lugar_4, #lugar_10, #lugar_11, #lugar_12, #lugar_13 {
+    float: left;
 }
 
+
 /*Colores Indicadores*/
+
 .verde {
     background-color: green;
 }
@@ -54,7 +57,9 @@
     background-color: blue;
 }
 
+
 /*Dimensiones Cajas*/
+
 #lugar_1, #lugar_2, #lugar_3, #lugar_4, #lugar_5, #lugar_6, #lugar_7, #lugar_8, #lugar_9,
  #lugar_10, #lugar_11, #lugar_12, #lugar_13, #lugar_14, #lugar_15, #lugar_16 {
      width: 80px;
@@ -64,19 +69,24 @@
      margin: 5px;
  }
 
+ .verde, .amarillo, .rojo, .azul {
+    border-color: black;
+    border-style: solid;
+ }
+
 .verde, .amarillo {
     width: 80px;
     height: 20px;
-    border-color: black;
-    border-style: solid;
-}
+}  
 
 .rojo, .azul {
     width: 20px;
     height: 80px;
-    border-color: black;
-    border-style: solid;
 }
+
+
+
+/*Posicionamiento colores cajas*/
 
 .rojo {
     float: left;
@@ -90,39 +100,77 @@
     float: right;
     position: relative;
     right: -2px;
-    top: -22px;
+    top: -35px;
 
 }
 
 .verde {
     position: relative;
-    top: 38px;
+    top: 25px;
     right: 3px;
 }
 
 .amarillo {
     position: relative;
     right: 3px;
-    top: -22px;
+    top: -35.5px;
 }
 
 
 /*Posicionamiento numeros cajas*/
 
-.numero_derecha {
+.numeros_derecha {
     float: right;
+    position: relative;
+    left: -29px;
+    top: 24px;
 }
 
-.numero_inferior {
+.numeros_inferiores {
     position: relative;
-    top: 38px;
-    left: 28px;
+    top: 29px;
+    left: 23px;
 }
+
+.numeros_superiores {
+    position: relative;
+    top: 21px;
+    left: 30px;
+}
+
+.numeros_izquierda {
+    position: relative;
+    top: 22px;
+    left: 19px;
+}
+
 
 /*Rotado Numeros*/
+
 .rotado-1 {
-    transform: rotate(-45deg);
+    transform: rotate(134deg);
     position: relative;
-    left: 24px;
-    top: 5px;
+    left: -21px;
+    top: 48px;
+}
+
+.rotado-5 {
+    transform: rotate(225deg);
+    position: relative;
+    left: -24px;
+    top: 0px;
+}
+
+.rotado-9 {
+    transform: rotate(318deg);
+    position: relative;
+    top: 2px;
+    left: 20px;
+}
+
+.rotado-13 {
+    transform: rotate(41deg);
+    position: relative;
+    top: 36px;
+    left: 20px;
 }
